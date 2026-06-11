@@ -3,7 +3,7 @@
  */
 
 // API Configuration
-export const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://4.244.186.213/evaluation-service';
+export const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://20.244.56.144/evaluation-service';
 export const ACCESS_TOKEN = (import.meta as any).env?.VITE_ACCESS_TOKEN || '';
 
 // Priority Engine Weights

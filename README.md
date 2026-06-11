@@ -17,7 +17,7 @@ npm install
 ### 2. Configure Environment Variables
 Create a `.env` file in the `notification_app_fe/` root directory (or set them directly in your environment):
 ```env
-VITE_API_BASE_URL=http://4.244.186.213/evaluation-service
+VITE_API_BASE_URL=http://20.244.56.144/evaluation-service
 VITE_ACCESS_TOKEN=your_bearer_token_here
 ```
 *Note: The application will automatically fallback to default URLs if the variables are not set.*
@@ -88,7 +88,7 @@ $$\text{Score} = \text{Weight} + \text{RecencyScore} + \text{UnreadBonus}$$
 - **Unread Bonus**: Unread items receive a `+50` score boost to float to the top.
 
 ### Reusable Logging Middleware
-The app routes lifecycle logs to `http://4.244.186.213/evaluation-service/logs`:
+The app routes lifecycle logs to `http://20.244.56.144/evaluation-service/logs`:
 - Logs page view render events on load.
 - Logs API transactions (success count, error states).
 - Logs internal updates (priority calculations, count adjustments).

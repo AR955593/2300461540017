@@ -78,7 +78,7 @@ Let $N$ be the total number of notifications returned by the API and $K$ be the 
 
 ## Logging Strategy
 
-The logging system utilizes a reusable middleware (`logger.ts`) that POSTs log payloads to the endpoint: `http://4.244.186.213/evaluation-service/logs`
+The logging system utilizes a reusable middleware (`logger.ts`) that POSTs log payloads to the endpoint: `http://20.244.56.144/evaluation-service/logs`
 
 ### Log Payload Structure:
 - `stack`: Literal `'frontend'`.

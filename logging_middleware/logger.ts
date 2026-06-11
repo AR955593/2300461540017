@@ -48,7 +48,8 @@ export async function Log(
   console[consoleMethod](`[${level.toUpperCase()}] [${packageName.toUpperCase()}] ${message}`, payload);
 
   try {
-    const response = await fetch('http://4.244.186.213/evaluation-service/logs', {
+    const baseUrl = (import.meta as any).env?.VITE_API_BASE_URL || 'http://20.244.56.144/evaluation-service';
+    const response = await fetch(`${baseUrl}/logs`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
